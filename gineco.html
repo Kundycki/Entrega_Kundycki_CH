@@ -10,7 +10,6 @@
 <body>
     <header>
         <h1 class="titulo">Policonsultorio Salta</h1> 
-        <p class="barra"> 
             <ul class="nav nav-underline">
                 <li class="nav-item">
                     <a class="nav-link" href="gineco.html">area gineco</a>
@@ -29,34 +28,47 @@
                 </li>
             </ul>
     </header>
-    <main class="main-container">
-        <section class="info-section">
-            <div class="image-wrapper">
-                <img src="/gineco/gineco1.png" alt="Ginecología">
+    <main>
+        <section class="info-section row">
+            <div class="text-center">
+                <img class="img-fluid rounded " src="/gineco/gineco1.png" alt="Ginecología">
             </div>
-            <p class="text-description">Nuestra área de ginecología ofrece atención integral para la salud de la mujer, con tecnología de vanguardia y un equipo médico altamente capacitado.</p>
-            <div class="image-wrapper">
-                <img src="/gineco/gineco2.png" alt="Equipo Ginecológico">
+            <div class="align-items-center">
+                <p class="text-description">Nuestra área de ginecología ofrece atención integral para la salud de la mujer, con tecnología de vanguardia y profesionales altamente calificados.</p>
+            </div>
+            <div class="text-center">
+                <img class="img-fluid" src="/gineco/gineco2.png" alt="Equipo Ginecológico">
             </div>
         </section>
-        <section class="appointment-section">
-            <h2 class="subtitulos">Solicita tu turno</h2>
-            <p>Agenda tu cita con nuestros especialistas completando el siguiente formulario:</p>
-            <form class="appointment-form">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+
+        <section>
+            <h2 class="subtitulos text-center">Horarios de Atención</h2>
+            <p class="text-center">Consulta nuestros horarios de atención y programa tu turno con nuestros especialistas completando el siguiente formulario:</p>
+            <div class="row">
+                <div>
+                    <ul>
+                        <li class="list-group-item">Lunes a Viernes: 8:00 - 12:00 y 14:00 - 21:00</li>
+                        <li class="list-group-item">Sábado: 8:00 - 12:00</li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div>
+                    <form class="appointment-form">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" id="nombre" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Enviar</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Enviar</button>
-            </form>
+            </div>
         </section>
     </main>
     

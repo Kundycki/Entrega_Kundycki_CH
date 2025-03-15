@@ -1,0 +1,122 @@
+@import "variables";
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .titulo {
+    text-align: center;
+    color: $primary-color;
+    font-size: $font-large;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+body {
+    background-color: $background-color;
+    padding: $padding-large;
+    margin: $padding-small;
+  }
+  
+  .subtitulos {
+    text-align: center;
+    color: $primary-color;
+    font-size: $font-medium;
+    margin: 0;
+  }
+  
+  .nav nav-underline {
+    text-align: center;
+    background-color: $secondary-color;
+    color: $text-color;
+  }
+  
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap-medium;
+    padding: $padding-large;
+  }
+  
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $gap-medium;
+    padding: $padding-large;
+  }
+  
+  .form-container {
+    max-width: $max-width-form;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap-medium;
+  }
+  
+  @media (min-width: 720px) {
+    .main-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $gap-medium;
+    padding: $padding-large;
+    text-align: center;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap-medium;
+    max-width: $max-width-content;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap-medium;
+  }
+  
+  .media-container video, .media-container img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    padding: $padding-large;
+  }
+
