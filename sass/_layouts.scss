@@ -1,0 +1,36 @@
+.titulo {
+    text-align: center;
+    color: $primary-color;
+    font-size: $font-large;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+body {
+    background-color: $background-color;
+    padding: $padding-large;
+    margin: $padding-small;
+  }
+  
+  .subtitulos {
+    text-align: center;
+    color: $primary-color;
+    font-size: $font-medium;
+    margin: 0;
+  }
+  
+  .nav nav-underline {
+    text-align: center;
+    background-color: $secondary-color;
+    color: $text-color;
+  }
+
+
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    padding: $padding-large;
+  }
