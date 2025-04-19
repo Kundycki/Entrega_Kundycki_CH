@@ -83,18 +83,26 @@
   border: 0;
 }
 
-.form-section {
-  padding: 60px 20px 80px;
-  background-color: #fff;
-}
-
 .form-container {
   max-width: 600px;
   margin: auto;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  background-color: rgba(26, 110, 188, 0.537254902);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.392);
+  margin-bottom: 20px;
+}
+.form-container input,
+.form-container textarea {
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+}
+.form-container .btn-primary {
+  font-weight: bold;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-size: 1.1rem;
 }
 
 .titulo {
@@ -107,8 +115,19 @@
 
 body {
   background-color: #E4D8C7;
-  padding: 20px;
-  margin: 5px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body, html {
+  padding: 0 20px;
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  flex: 1;
 }
 
 .subtitulos {
@@ -129,7 +148,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #27445D;
-  padding: 20px;
+  padding: 0;
 }
 
 .pilares {
@@ -158,8 +177,12 @@ body {
   transform: translateY(-5px);
 }
 .pilares .pilar img {
-  width: 80px;
-  margin-bottom: 10px;
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 .pilares .pilar h3 {
   font-size: 1.2em;
@@ -170,6 +193,15 @@ body {
   font-size: 1em;
   color: #666;
   max-width: 250px;
+}
+
+section .pilares .pilar img {
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /*# sourceMappingURL=style.css.map */

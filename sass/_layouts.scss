@@ -8,10 +8,21 @@
 
 body {
     background-color: $background-color;
-    padding: $padding-large;
-    margin: $padding-small;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
   
+body, html {
+    padding: 0 20px; 
+    height: 100%;
+    margin: 0;
+  }
+
+main {
+  flex: 1;
+}
+
   .subtitulos {
     text-align: center;
     color: $primary-color;
@@ -32,5 +43,5 @@ body {
     justify-content: center;
     align-items: center;
     background-color: $secondary-color;
-    padding: $padding-large;
+    padding: 0;
   }
